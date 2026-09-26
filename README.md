@@ -13,7 +13,7 @@ A reproducible medical-image classification study on the public **MedMNIST v2** 
 
 ## Author
 
-**Habib Ur Rehman** -- BS Data Analytics (GCUF); machine learning and artificial intelligence.
+**Habib Ur Rehman** -- Data Scientist, GCUF graduate; interested in machine learning, medical imaging, and reproducible AI projects like this one.
 
 | | |
 |---|---|
