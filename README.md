@@ -1,11 +1,4 @@
-# MedMNIST v2 Reproducibility Benchmark
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Status: Early Stage](https://img.shields.io/badge/Status-Early%20Stage-orange.svg)](docs/TECHNICAL_STATUS.md)
-[![Phase 1](https://img.shields.io/badge/Phase%201-In%20Progress-yellow.svg)](#phase-1-reproducibility-baseline)
-[![Phase 2](https://img.shields.io/badge/Phase%202-Deferred-lightgrey.svg)](#phase-2-unified-learning-deferred)
-[![Platform: Kaggle GPU](https://img.shields.io/badge/Platform-Kaggle%20GPU-20BEFF.svg)](kaggle/)
-[![Upstream: MedMNIST](https://img.shields.io/badge/Upstream-MedMNIST%20v2-0A66C2.svg)](https://github.com/MedMNIST/MedMNIST)
+# Reproducible Deep Learning Benchmarking and Unified Learning on MedMNIST v2
 
 A reproducible medical-image classification study on the public **MedMNIST v2** benchmark. This repository releases the protocol, reference implementation, configuration, literature review, execution evidence, and compute-aware plan for a two-phase research program.
 
@@ -13,13 +6,15 @@ A reproducible medical-image classification study on the public **MedMNIST v2** 
 
 ## Author
 
-**Habib Ur Rehman** -- Data Scientist, GCUF graduate; interested in machine learning, medical imaging, and reproducible AI projects like this one.
+**Habib Ur Rehman** -- GCUF Graduate | AI/ML Engineer and Researcher with expertise in ML, DL, Gen AI, RAG, LLM Fine-Tuning, AI Agents, and Multimodal Learning. 
 
-| | |
-|---|---|
-| Website | [habib.top](https://www.habib.top) |
-| GitHub | [github.com/habib-analyst](https://github.com/habib-analyst) |
-| LinkedIn | [linkedin.com/in/hur-dev](https://www.linkedin.com/in/hur-dev) |
+<div align="center">
+
+| Website | GitHub | LinkedIn |
+|:---:|:---:|:---:|
+| [habib.top](https://www.habib.top) | [habib-analyst](https://github.com/habib-analyst) | [hur-dev](https://www.linkedin.com/in/hur-dev) |
+
+</div>
 
 ---
 
