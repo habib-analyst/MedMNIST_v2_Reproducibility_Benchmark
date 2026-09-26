@@ -1,0 +1,22 @@
+{
+    "id":  "habiburrehman5121213/medmnist-3d-suite",
+    "title":  "MedMNIST 3D Suite 30 Runs",
+    "code_file":  "medmnist_3d_suite_kaggle.ipynb",
+    "language":  "python",
+    "kernel_type":  "notebook",
+    "is_private":  false,
+    "enable_gpu":  true,
+    "enable_internet":  true,
+    "dataset_sources":  [
+
+                        ],
+    "competition_sources":  [
+
+                            ],
+    "kernel_sources":  [
+
+                       ],
+    "model_sources":  [
+
+                      ]
+}

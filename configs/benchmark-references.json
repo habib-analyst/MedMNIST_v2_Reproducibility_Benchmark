@@ -1,0 +1,16 @@
+{
+  "source": "https://medmnist.com/v2",
+  "retrieved": "2026-09-21",
+  "note": "Published reference values, not measurements from this project. 2D: ResNet-50 (224). 3D: ResNet-50 + 3D.",
+  "values": {
+    "pathmnist": [0.989, 0.892], "chestmnist": [0.773, 0.948],
+    "dermamnist": [0.912, 0.731], "octmnist": [0.958, 0.776],
+    "pneumoniamnist": [0.962, 0.884], "retinamnist": [0.716, 0.511],
+    "breastmnist": [0.866, 0.842], "bloodmnist": [0.997, 0.950],
+    "tissuemnist": [0.932, 0.680], "organamnist": [0.998, 0.947],
+    "organcmnist": [0.993, 0.911], "organsmnist": [0.975, 0.785],
+    "organmnist3d": [0.994, 0.883], "nodulemnist3d": [0.875, 0.847],
+    "fracturemnist3d": [0.725, 0.494], "adrenalmnist3d": [0.828, 0.745],
+    "vesselmnist3d": [0.907, 0.918], "synapsemnist3d": [0.851, 0.795]
+  }
+}

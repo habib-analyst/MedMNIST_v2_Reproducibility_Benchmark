@@ -1,0 +1,9 @@
+{
+    "record_type": "kaggle_partial_attempt",
+    "epochs_completed": 27,
+    "planned_epochs": 100,
+    "status": "paused_by_session_budget",
+    "verified": false,
+    "path_normalization_note": "The original Kaggle working-directory name in command.json and train.log was normalized before publication; measured values are unchanged.",
+    "note": "Checkpointed Kaggle attempt. Its large checkpoint is not stored in Git."
+}

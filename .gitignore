@@ -1,0 +1,22 @@
+# Ignore datasets, checkpoints, logs, and credentials
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.zip
+*.tar
+*.tar.gz
+runs/
+checkpoints/
+data/
+datasets/
+*.log
+.env
+.env.*
+secrets/
+credentials/
+__pycache__/
+*.pyc
+
+# Personal documents
+Habib_Ur_Rehman_Resume.pdf

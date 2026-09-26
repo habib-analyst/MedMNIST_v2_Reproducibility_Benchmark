@@ -1,0 +1,19 @@
+{
+  "dataset": "chestmnist",
+  "model": "torchvision resnet50, num_classes=14, input 224x224 (--resize from 28, NEAREST)",
+  "seed": 17,
+  "epochs_completed": 32,
+  "epochs_configured": 100,
+  "best_epoch_zero_indexed": 11,
+  "best_epoch_one_indexed": 12,
+  "recorded_best_val_auc": 0.7748638520484351,
+  "measured_test_auc": 0.7727799934878731,
+  "measured_test_acc": 0.9478001159006819,
+  "mean_test_loss_bce": 0.16669273795692668,
+  "test_samples": 22433,
+  "batch_size": 32,
+  "evaluator": "medmnist.Evaluator(chestmnist, 'test', size=28) from medmnist 3.0.2",
+  "torch": "2.6.0+cpu",
+  "elapsed_seconds": 3066.7,
+  "scope_note": "Single seed, interrupted at 32/100 epochs. Test metrics come from the best-validation checkpoint (epoch 12). Not the five-seed protocol."
+}

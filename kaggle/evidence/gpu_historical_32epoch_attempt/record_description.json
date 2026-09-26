@@ -1,0 +1,11 @@
+{
+    "record_type": "historical_kaggle_partial_attempt",
+    "epochs_completed": 32,
+    "planned_epochs": 100,
+    "platform": "Kaggle",
+    "command_paths": "/kaggle/working",
+    "status": "historical_partial_incomplete",
+    "verified": false,
+    "path_normalization_note": "The original Kaggle working-directory name in command.json and train.log was normalized before publication; measured values are unchanged.",
+    "note": "Preserved historical GPU record. The exact GPU model and final state were not fully recorded. Not an official completed result."
+}

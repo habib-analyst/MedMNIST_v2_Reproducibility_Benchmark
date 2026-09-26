@@ -1,0 +1,15 @@
+{
+    "run_id":  "2d-chestmnist-resnet50-224-seed17-r1",
+    "dataset":  "chestmnist",
+    "seed":  17,
+    "dimension":  "2d",
+    "model":  "resnet50",
+    "epochs":  100,
+    "batch_size":  128,
+    "commit":  "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+    "status":  "historical_partial_incomplete",
+    "started_utc":  "2026-09-21T20:08:10Z",
+    "verified":  false,
+    "prior_attempts":  null,
+    "provenance_note":  "Preserved historical GPU record; the final state and exact GPU model were not fully recorded. Not an official completed result."
+}

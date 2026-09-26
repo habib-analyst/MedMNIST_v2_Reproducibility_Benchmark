@@ -1,0 +1,22 @@
+{
+  "project": "MedMNIST v2 Reproducibility Benchmark",
+  "phase": "baseline",
+  "planned_runs": 90,
+  "seeds": [17, 29, 43, 71, 101],
+  "datasets_2d": 12,
+  "datasets_3d": 6,
+  "epochs": 100,
+  "model_2d": "resnet50",
+  "model_3d": "resnet50_3d",
+  "batch_size_2d_observed": 128,
+  "upstream_repository": "https://github.com/MedMNIST/experiments",
+  "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+  "completed_verified_runs": 0,
+  "partial_records": {
+    "gpu_partial_27epoch_record": 27,
+    "gpu_historical_32epoch_attempt": 32
+  },
+  "measured_3d_runtime": false,
+  "measured_peak_vram": false,
+  "container_tested": false
+}
