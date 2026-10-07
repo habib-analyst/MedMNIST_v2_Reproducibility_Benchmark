@@ -1,0 +1,1387 @@
+{
+ "protocol": "medmnist2d-native28-resnet18",
+ "n_runs": 60,
+ "runs": [
+  {
+   "run_id": "2d-chestmnist-resnet18-28-seed17",
+   "config_hash": "be4b6d28d551",
+   "dataset": "chestmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 17,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-chestmnist-resnet18-28-seed29",
+   "config_hash": "20e6ba090857",
+   "dataset": "chestmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 29,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-chestmnist-resnet18-28-seed43",
+   "config_hash": "d7aa5577637e",
+   "dataset": "chestmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 43,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-chestmnist-resnet18-28-seed71",
+   "config_hash": "992eba85fa04",
+   "dataset": "chestmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 71,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-chestmnist-resnet18-28-seed101",
+   "config_hash": "9eb712418b83",
+   "dataset": "chestmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 101,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-bloodmnist-resnet18-28-seed17",
+   "config_hash": "348de85e4b61",
+   "dataset": "bloodmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 17,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-bloodmnist-resnet18-28-seed29",
+   "config_hash": "ad4484c35197",
+   "dataset": "bloodmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 29,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-bloodmnist-resnet18-28-seed43",
+   "config_hash": "2b7e3a56bd13",
+   "dataset": "bloodmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 43,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-bloodmnist-resnet18-28-seed71",
+   "config_hash": "7393634564bd",
+   "dataset": "bloodmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 71,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-bloodmnist-resnet18-28-seed101",
+   "config_hash": "1ac2d3c2e38b",
+   "dataset": "bloodmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 101,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-breastmnist-resnet18-28-seed17",
+   "config_hash": "368f7016b6c3",
+   "dataset": "breastmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 17,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-breastmnist-resnet18-28-seed29",
+   "config_hash": "39249a518c0c",
+   "dataset": "breastmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 29,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-breastmnist-resnet18-28-seed43",
+   "config_hash": "70caee4f4541",
+   "dataset": "breastmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 43,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-breastmnist-resnet18-28-seed71",
+   "config_hash": "b785ccff96e3",
+   "dataset": "breastmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 71,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-breastmnist-resnet18-28-seed101",
+   "config_hash": "7297e72472a0",
+   "dataset": "breastmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 101,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-dermamnist-resnet18-28-seed17",
+   "config_hash": "8d1a3c3b3cad",
+   "dataset": "dermamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 17,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-dermamnist-resnet18-28-seed29",
+   "config_hash": "83b1dd1a7301",
+   "dataset": "dermamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 29,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-dermamnist-resnet18-28-seed43",
+   "config_hash": "7fc2d2cc396e",
+   "dataset": "dermamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 43,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-dermamnist-resnet18-28-seed71",
+   "config_hash": "d54a6ebee823",
+   "dataset": "dermamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 71,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-dermamnist-resnet18-28-seed101",
+   "config_hash": "bc22efcaf70f",
+   "dataset": "dermamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 101,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-octmnist-resnet18-28-seed17",
+   "config_hash": "177938927c64",
+   "dataset": "octmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 17,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-octmnist-resnet18-28-seed29",
+   "config_hash": "7c83a9ae0b6c",
+   "dataset": "octmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 29,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-octmnist-resnet18-28-seed43",
+   "config_hash": "084bfe3c09e1",
+   "dataset": "octmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 43,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-octmnist-resnet18-28-seed71",
+   "config_hash": "f7fa910b45e5",
+   "dataset": "octmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 71,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-octmnist-resnet18-28-seed101",
+   "config_hash": "d1dd95c556b6",
+   "dataset": "octmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 101,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-organamnist-resnet18-28-seed17",
+   "config_hash": "a99fc4f96fa1",
+   "dataset": "organamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 17,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-organamnist-resnet18-28-seed29",
+   "config_hash": "acc83a43eadc",
+   "dataset": "organamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 29,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-organamnist-resnet18-28-seed43",
+   "config_hash": "eb2162b52eb5",
+   "dataset": "organamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 43,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-organamnist-resnet18-28-seed71",
+   "config_hash": "a2b9612e10df",
+   "dataset": "organamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 71,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-organamnist-resnet18-28-seed101",
+   "config_hash": "4f4cd80eb1de",
+   "dataset": "organamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 101,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-organcmnist-resnet18-28-seed17",
+   "config_hash": "a91b5ab86ff1",
+   "dataset": "organcmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 17,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-organcmnist-resnet18-28-seed29",
+   "config_hash": "e4cf454c6d94",
+   "dataset": "organcmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 29,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-organcmnist-resnet18-28-seed43",
+   "config_hash": "ce9444de2912",
+   "dataset": "organcmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 43,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-organcmnist-resnet18-28-seed71",
+   "config_hash": "adb255e2731c",
+   "dataset": "organcmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 71,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-organcmnist-resnet18-28-seed101",
+   "config_hash": "2824bb4e5817",
+   "dataset": "organcmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 101,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-organsmnist-resnet18-28-seed17",
+   "config_hash": "f29afc5ae5db",
+   "dataset": "organsmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 17,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-organsmnist-resnet18-28-seed29",
+   "config_hash": "9b8ad4236273",
+   "dataset": "organsmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 29,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-organsmnist-resnet18-28-seed43",
+   "config_hash": "33251e88fcc8",
+   "dataset": "organsmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 43,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-organsmnist-resnet18-28-seed71",
+   "config_hash": "ffc838daecb4",
+   "dataset": "organsmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 71,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-organsmnist-resnet18-28-seed101",
+   "config_hash": "a7cf4983ad4d",
+   "dataset": "organsmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 101,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-pathmnist-resnet18-28-seed17",
+   "config_hash": "af0eb374d5d1",
+   "dataset": "pathmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 17,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-pathmnist-resnet18-28-seed29",
+   "config_hash": "911cc60f251d",
+   "dataset": "pathmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 29,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-pathmnist-resnet18-28-seed43",
+   "config_hash": "bf9871fbad01",
+   "dataset": "pathmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 43,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-pathmnist-resnet18-28-seed71",
+   "config_hash": "b87aa5f891b5",
+   "dataset": "pathmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 71,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-pathmnist-resnet18-28-seed101",
+   "config_hash": "c872dea0e3b5",
+   "dataset": "pathmnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 101,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-pneumoniamnist-resnet18-28-seed17",
+   "config_hash": "8b72129a8e8a",
+   "dataset": "pneumoniamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 17,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-pneumoniamnist-resnet18-28-seed29",
+   "config_hash": "81f51b0ad0aa",
+   "dataset": "pneumoniamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 29,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-pneumoniamnist-resnet18-28-seed43",
+   "config_hash": "c95979d89aec",
+   "dataset": "pneumoniamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 43,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-pneumoniamnist-resnet18-28-seed71",
+   "config_hash": "4d52dabcc35a",
+   "dataset": "pneumoniamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 71,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-pneumoniamnist-resnet18-28-seed101",
+   "config_hash": "6493dadf4319",
+   "dataset": "pneumoniamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 101,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-retinamnist-resnet18-28-seed17",
+   "config_hash": "1b5efba079d9",
+   "dataset": "retinamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 17,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-retinamnist-resnet18-28-seed29",
+   "config_hash": "c136c68fd336",
+   "dataset": "retinamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 29,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-retinamnist-resnet18-28-seed43",
+   "config_hash": "a0c5114bc391",
+   "dataset": "retinamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 43,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-retinamnist-resnet18-28-seed71",
+   "config_hash": "8cc5105d182c",
+   "dataset": "retinamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 71,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-retinamnist-resnet18-28-seed101",
+   "config_hash": "980d0758fcfa",
+   "dataset": "retinamnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 101,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-tissuemnist-resnet18-28-seed17",
+   "config_hash": "af19a13c0036",
+   "dataset": "tissuemnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 17,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-tissuemnist-resnet18-28-seed29",
+   "config_hash": "dcf5e0bef79b",
+   "dataset": "tissuemnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 29,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-tissuemnist-resnet18-28-seed43",
+   "config_hash": "34b8ef7054cb",
+   "dataset": "tissuemnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 43,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-tissuemnist-resnet18-28-seed71",
+   "config_hash": "7a2dcfff38b6",
+   "dataset": "tissuemnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 71,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  },
+  {
+   "run_id": "2d-tissuemnist-resnet18-28-seed101",
+   "config_hash": "0c03870d9cea",
+   "dataset": "tissuemnist",
+   "arch": "resnet18",
+   "resolution": 28,
+   "epochs": 100,
+   "batch_size": 128,
+   "lr": 0.001,
+   "schedule": {
+    "type": "MultiStepLR",
+    "milestones": [
+     50,
+     75
+    ],
+    "gamma": 0.1
+   },
+   "optimizer": "Adam",
+   "seed": 101,
+   "upstream_commit": "70b6b3a7ad7afddff1df2a3b735235830fbdb142",
+   "resize": false,
+   "as_rgb": true
+  }
+ ],
+ "note": "Native 28x28 (no --resize). See docs/PROTOCOL_DECISION_28.md."
+}
