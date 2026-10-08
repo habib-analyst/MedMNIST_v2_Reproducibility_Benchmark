@@ -1,0 +1,56 @@
+{
+ "breastmnist": {
+  "n_seeds": 5,
+  "seeds": [
+   17,
+   29,
+   43,
+   71,
+   101
+  ],
+  "test_auc_mean": 0.90739,
+  "test_auc_std": 0.01028,
+  "test_auc_min": 0.89223,
+  "test_auc_max": 0.92168,
+  "test_auc_spread": 0.02945,
+  "test_acc_mean": 0.86795,
+  "test_acc_std": 0.01118,
+  "unstable_seed_spread": true
+ },
+ "pneumoniamnist": {
+  "n_seeds": 5,
+  "seeds": [
+   17,
+   29,
+   43,
+   71,
+   101
+  ],
+  "test_auc_mean": 0.94639,
+  "test_auc_std": 0.01061,
+  "test_auc_min": 0.93407,
+  "test_auc_max": 0.9613,
+  "test_auc_spread": 0.02723,
+  "test_acc_mean": 0.84904,
+  "test_acc_std": 0.03745,
+  "unstable_seed_spread": true
+ },
+ "retinamnist": {
+  "n_seeds": 5,
+  "seeds": [
+   17,
+   29,
+   43,
+   71,
+   101
+  ],
+  "test_auc_mean": 0.72897,
+  "test_auc_std": 0.00814,
+  "test_auc_min": 0.71616,
+  "test_auc_max": 0.74166,
+  "test_auc_spread": 0.0255,
+  "test_acc_mean": 0.5155,
+  "test_acc_std": 0.00967,
+  "unstable_seed_spread": true
+ }
+}
