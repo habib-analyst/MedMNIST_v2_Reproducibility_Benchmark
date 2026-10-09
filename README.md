@@ -285,4 +285,4 @@ Full text: [`LICENSE`](LICENSE).
 
 ---
 
-*Early-stage research software. Partial evidence is retained for auditability. No completed 100-epoch five-seed baseline is claimed at this time.*
+*Early-stage research software. Partial evidence is retained for auditability. Batch 1 (3 datasets, five-seed) is complete; no full-suite 100-epoch five-seed baseline is claimed at this time.*
