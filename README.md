@@ -47,7 +47,7 @@ This project addresses that gap in two stages:
 | **Phase 1** | Reproduce 2D and 3D baseline performance across the full MedMNIST v2 suite under a fixed, auditable protocol (90 planned runs: 18 datasets x 5 seeds). | **Early-stage / in progress.** Not complete. |
 | **Phase 2** | Investigate whether a shared, modality-aware model can generalize across heterogeneous 2D and 3D medical-imaging tasks. | **Deferred** until Phase 1 is complete. |
 
-Execution to date was performed on **Kaggle GPU** notebooks using the official MedMNIST training scripts and a pinned upstream commit. Partial 2D evidence (27-epoch and 32-epoch records) is retained and labeled; no completed 100-epoch run and no five-seed aggregates are claimed.
+Execution to date was performed on **Kaggle GPU** notebooks using the official MedMNIST training scripts and a pinned upstream commit. The 224x224 ResNet-50 arm proved infeasible on free-tier compute (see `docs/PROTOCOL_DECISION_28.md`); its partial 2D evidence (27-epoch and 32-epoch records) is retained and labeled. The active 2D arm is native-28 ResNet-18, where **batch 1 is complete: 15/15 runs with five-seed mean±std per dataset** (breast 0.9074±0.0103, pneumonia 0.9464±0.0106, retina 0.7290±0.0081; see `runs/official28/`). In 3D, **5/30 runs are verified complete** (AdrenalMNIST3D x5 seeds).
 
 ---
 
@@ -82,7 +82,7 @@ A model that performs well on one dataset should not automatically be assumed to
 3. **Treat each run as an independent identity.** Outputs are per-run AUC and accuracy, then per-dataset aggregates across five seeds, then comparison to published references.
 4. **Preserve evidence.** Training logs, exact commands, status records, environment freezes, and (where available) checksums are retained under `kaggle/evidence/`.
 5. **Separate exploratory work.** Partial-checkpoint evaluations live in `exploratory/` and are excluded from official aggregates.
-6. **Schedule against measured compute.** 2D timings inform planning estimates; 3D runtime and peak VRAM remain unmeasured pending a dedicated calibration run.
+6. **Schedule against measured compute.** 2D timings inform planning estimates; 3D runtime measured (~126 s/epoch avg on T4 x2); peak VRAM still unmeasured.
 
 ### Phase relationship
 
@@ -105,7 +105,7 @@ Phase 2 does not begin until Phase 1 deliverables are in place. The unified-lear
 | Datasets | 12 MedMNIST2D + 6 MedMNIST3D |
 | Runs | 5 seeds per dataset: 17, 29, 43, 71, 101 |
 | Total planned runs | 90 |
-| 2D model | ResNet-50; 28x28 inputs resized to 224x224 RGB |
+| 2D model | ResNet-18; native 28x28 inputs (upstream defaults) — feasibility arm per `docs/PROTOCOL_DECISION_28.md`. The 224x224 ResNet-50 matrix is retained in `run-plan.json` as the historical record |
 | 3D model | ResNet-50-based 3D architecture |
 | Batch size | 128 (2D), 32 (3D) |
 | Epochs | 100 |
@@ -123,21 +123,21 @@ Phase 2 does not begin until Phase 1 deliverables are in place. The unified-lear
 
 | Scope | Planned | Completed (100-epoch) | Notes |
 |---|---:|---:|---|
-| ChestMNIST seed 17 | 1 | 0 | 27/100 checkpointed execution retained |
-| Other ChestMNIST seeds | 4 | 0 | Not run |
-| Other 2D datasets | 55 | 0 | Not run |
-| 3D datasets | 30 | 0 | Not run; notebook prepared, not executed |
-| **Total Phase 1** | **90** | **0** | Baseline in progress |
+| Batch 1: breast/retina/pneumonia (native-28 ResNet-18) | 15 | 15 | Five-seed mean±std per dataset; `runs/official28/` |
+| Other 2D datasets (native-28 arm) | 45 | 0 | Not run |
+| 224x224 ResNet-50 arm (historical) | 60 | 0 | 27-epoch + 32-epoch partial records retained; infeasible on free compute |
+| 3D datasets | 30 | 5 | AdrenalMNIST3D x5 seeds verified; nodule seed 17 stalled at 37/100 (checkpoint preserved); 2 fracture runs paused in Kaggle session (resumable) |
 
 ### What has been observed
 
 - A 2D ChestMNIST ResNet-50 execution reached **27 checkpointed epochs** and paused when the session budget could not start another epoch.
 - A separate historical GPU execution record reached **32 epochs**.
 - Both records include the training log, exact command, status record, and environment freeze.
-- Measured 2D observation: approximately **1,325--1,341 seconds per epoch**.
+- Measured 2D observation (224x224 arm): approximately **1,325--1,341 seconds per epoch**.
+- **Batch 1 (native-28 ResNet-18, 100 epochs, 5 seeds/dataset):** breast test AUC 0.9074±0.0103 (spread 0.0295), pneumonia 0.9464±0.0106 (spread 0.0272), retina 0.7290±0.0081 (spread 0.0255) — every dataset shows seed spread above 2.5 points.
 - The **36.8--37.3 GPU-hour** figure for a complete 100-epoch ChestMNIST run is an **extrapolation**, not an end-to-end measurement.
 - Derived planning estimate (not measured): scaling observed ChestMNIST epoch time by each 2D dataset's training-set size yields approximately **1,150--1,200 T4-class GPU-hours** for the full 2D suite (60 runs x 100 epochs).
-- **3D runtime and peak VRAM are not yet measured.** A dedicated calibration run is required before the 3D schedule is finalized.
+- **3D calibration measured 2026-10-07:** ~120.9 s/epoch (seed 17) and ~131.9 s/epoch (seed 29) on Kaggle Tesla T4 x2 (AdrenalMNIST3D, ResNet-50-3D); ~3.5 GPU-hours per complete 100-epoch 3D run; full 3D suite ≈ 105 T4-hours. Peak VRAM still unmeasured.
 
 The full protocol remains pending because free GPU session and weekly compute limits were insufficient for the complete 2D/3D workload. Partial runs are retained as separate records rather than presented as final results.
 
@@ -147,14 +147,14 @@ The full protocol remains pending because free GPU session and weekly compute li
 |---|---|
 | `kaggle/evidence/gpu_partial_27epoch_record/` | 27-epoch checkpointed execution: log, command, status, environment, progress |
 | `kaggle/evidence/gpu_historical_32epoch_attempt/` | Separate 32-epoch GPU execution: log, command, status, environment, checksum |
-| `kaggle/runner/` | GPU suite notebook and runner metadata (3D notebook prepared; not executed) |
+| `kaggle/runner/` | GPU suite notebook and runner metadata (3D suite executed: 5/30 runs verified complete) |
 | `kaggle/results/` | Small result snapshots from the executed workflow |
 | `exploratory/` | Partial-checkpoint evaluation; explicitly outside official results |
 | `docs/RESULTS_STATUS.md` | Tabular completion status |
 | `docs/RUNTIME_AND_VRAM.md` | Timing and VRAM status (3D rows blank until calibrated) |
 | `docs/TECHNICAL_STATUS.md` | Prepared vs. incomplete checklist |
 
-No completed 100-epoch run is currently available; therefore no five-seed aggregate statistic is reported.
+Five-seed aggregates are reported for batch 1 (breast 0.9074±0.0103, pneumonia 0.9464±0.0106, retina 0.7290±0.0081 test AUC); all other datasets await completed runs.
 
 ---
 
@@ -236,14 +236,14 @@ Further detail:
 
 - `docs/INSTALLATION.md` -- historical environment notes and current container status.
 - `requirements-lock.txt` -- frozen historical Kaggle environment.
-- `kaggle/runner/` -- GPU suite used for the 2D evidence; 3D notebook prepared but not executed.
+- `kaggle/runner/` -- GPU suite used for the 2D evidence and the executed 3D suite (5/30 runs complete).
 - `scripts/run_official_2d.py` -- local CPU pilot runner.
 
 ---
 
 ## Compute-aware execution plan
 
-1. Run one 3D calibration job and record GPU model, peak CUDA memory (`max_memory_allocated` / `max_memory_reserved`), batch size, input shape, and seconds per epoch.
+1. 3D calibration job — DONE 2026-10-07 (seconds/epoch measured: ~126 avg; peak CUDA memory still to record when a run exposes its logs).
 2. Write measured values into `docs/RUNTIME_AND_VRAM.md`.
 3. Use measured 2D and 3D timings to schedule datasets in parallel where storage and memory allow.
 4. Preserve checkpoint/resume behavior and record every run in a machine-readable index.
