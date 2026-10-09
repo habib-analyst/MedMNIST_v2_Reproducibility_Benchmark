@@ -27,7 +27,7 @@ documented protocol change for the 2D suite (native $28 \times 28$ ResNet-18
 instead of $224 \times 224$ ResNet-50); the completed batch-1 runs
 (breast, retina, pneumonia $\times$ 5 seeds) show seed spreads above 2.5
 percentage points on every dataset, supporting the reproducibility concern
-that motivates the study. All configurations, logs, and results are preserved
+that motivates the study. All configurations, run records, and results are preserved
 in a public working repository.\footnote{\url{https://github.com/habib-analyst/MedMNIST_v2_Reproducibility_Benchmark}}
 \end{abstract}
 
@@ -52,8 +52,9 @@ fixing random seeds, and verifying the outputs independently.
 \section{Step (a): ChestMNIST with ResNet-50 at $224 \times 224$}
 
 The specified configuration (ResNet-50, $224 \times 224$ RGB) was attempted
-first. A single 100-epoch ChestMNIST run measured approximately 37 GPU-hours
-on a Kaggle T4, which exceeds the available free-tier quota
+first. A single 100-epoch ChestMNIST run was extrapolated at approximately
+37 GPU-hours on a Kaggle T4 from measured per-epoch times, which exceeds the
+available free-tier quota
 ($\sim$30 GPU-hours/week) for even one complete run. Two partial records exist
 (a 27-epoch and a 32-epoch single-seed run, preserved under
 \texttt{kaggle/evidence/} and labeled partial/exploratory). \textbf{No
@@ -79,13 +80,16 @@ historical record and can be re-run if larger compute becomes available.
 
 \subsection{Batch 1 results (2D, complete and verified)}
 
-Fifteen of fifteen runs completed with exit code 0 and independently verified
-metrics (Table~\ref{tab:batch1}).
+Fifteen of fifteen runs completed with exit code 0; metrics were
+reconstructed from the run scripts' stdout logs after the Kaggle session
+ended, with provenance documented in the repository
+(Table~\ref{tab:batch1}).
 
 \begin{table}[h]
 \centering
 \caption{Batch 1: native $28 \times 28$ ResNet-18, 100 epochs, 5 seeds per dataset.
-\textit{Spread} is max$-$min test AUC across the five seeds.
+\textit{Spread} is max$-$min test AUC across the five seeds; std is the
+population standard deviation across seeds.
 Published AUC values are the ResNet-50 ($224 \times 224$) reference column;
 architectures differ, so the comparison is a sanity signal, not a replication claim.}
 \label{tab:batch1}
@@ -108,10 +112,11 @@ concern the protocol was designed to test.
 
 \subsection{3D suite (in progress)}
 
-Five of thirty 3D runs are complete and verified (AdrenalMNIST3D $\times$ 5
-seeds, 3D ResNet-50, 100 epochs each). The sixth run (NoduleMNIST3D, seed 17)
-is stalled at epoch 37 of 100 with its checkpoint preserved; the remaining 25
-runs ($\sim$90 GPU-hours) are blocked on compute availability.
+Five of thirty 3D runs were executed (AdrenalMNIST3D $\times$ 5
+seeds, 3D ResNet-50, 100 epochs each); per-run metric records are being
+finalized in the repository. A sixth run is stalled mid-training with its
+checkpoint preserved; the remaining runs ($\sim$90 GPU-hours) are blocked on
+compute availability.
 
 \section{Comparison with Reported Performance}
 
