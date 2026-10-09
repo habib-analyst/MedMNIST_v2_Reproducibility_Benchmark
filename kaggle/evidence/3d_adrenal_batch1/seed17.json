@@ -1,0 +1,17 @@
+{
+  "run_id": "3d-adrenalmnist3d-resnet50-28-seed17-r1",
+  "dataset": "adrenalmnist3d",
+  "dimension": "3d",
+  "model": "ResNet-50-based 3D (upstream train_and_eval_pytorch_3d.py @ 70b6b3a7ad7afddff1df2a3b735235830fbdb142)",
+  "seed": 17,
+  "epochs_planned": 100,
+  "epochs_completed": 100,
+  "status": "complete",
+  "platform": "Kaggle (Tesla T4 x2)",
+  "session_date": "2026-10-07",
+  "verification": "Completion verified from live session output (2026-10-07); per-run AUC/accuracy not independently extracted from the notebook \u2014 recorded as null, not estimated.",
+  "test_auc": null,
+  "test_acc": null,
+  "checkpoint_retained": false,
+  "note": "Checkpoint did not survive the Kaggle session; completion status only."
+}
