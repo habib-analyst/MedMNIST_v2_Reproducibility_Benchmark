@@ -18,6 +18,6 @@ Derived suite estimate (not measured): scaling the observed ChestMNIST epoch tim
 - Measured on Kaggle (Tesla T4 x2): AdrenalMNIST3D, ResNet-50 3D, 100 epochs — seed 17: 12,088.8 s total (~120.9 s/epoch); seed 29: 13,187.4 s total (~131.9 s/epoch).
 - Average ~126 s/epoch ≈ 3.5 GPU-hours per complete 100-epoch 3D run.
 - Full 3D suite (6 datasets × 5 seeds = 30 runs): ≈ 105 T4-class GPU-hours.
-- Session note: 5 of 30 runs verified complete in one 11-hour Kaggle session (all adrenalmnist3d); 2 fracturemnist3d runs paused and resumable via checkpointing.
+- Session note (Kaggle, 2026-10-07): 5 of 30 runs verified complete in one ~11-hour session (all adrenalmnist3d); 2 fracturemnist3d runs (seeds 17, 29) paused in that same session and resumable via Kaggle prior-state attach. Separately, on Colab (2026-10-08), nodulemnist3d seed 17 stalled at epoch 37/100 with its 739 MB checkpoint preserved on Drive — a different run on a different platform.
 - Peak VRAM: not yet measured (per-epoch logs are written to worker-disk files not exposed in Kaggle's live log viewer).
 - Full Phase 1 total (2D + 3D, estimate): ≈ 1,255–1,305 T4-hours ≈ 330–435 A100-hours (3–4× heuristic).
