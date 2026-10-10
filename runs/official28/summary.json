@@ -52,5 +52,23 @@
   "test_acc_mean": 0.5155,
   "test_acc_std": 0.00967,
   "unstable_seed_spread": true
+ },
+ "dermamnist": {
+  "n_seeds": 3,
+  "seeds": [
+   17,
+   29,
+   43
+  ],
+  "test_auc_mean": 0.91305,
+  "test_auc_std": 0.00484,
+  "test_auc_min": 0.90754,
+  "test_auc_max": 0.9166,
+  "test_auc_spread": 0.00906,
+  "test_acc_mean": 0.73732,
+  "test_acc_std": 0.00853,
+  "unstable_seed_spread": false,
+  "partial": true,
+  "partial_note": "3/5 seeds (71/101 deferred to quota reset); instability verdict pending full 5-seed set"
  }
 }
