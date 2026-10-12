@@ -70,5 +70,22 @@
   "test_acc_mean": 0.73825,
   "test_acc_std": 0.00768,
   "unstable_seed_spread": true
+ },
+ "bloodmnist": {
+  "n_seeds": 4,
+  "seeds": [
+   17,
+   29,
+   43,
+   101
+  ],
+  "test_auc_mean": 0.99752,
+  "test_auc_std": 0.00024,
+  "test_auc_min": 0.9972,
+  "test_auc_max": 0.99785,
+  "test_auc_spread": 0.00065,
+  "test_acc_mean": 0.95688,
+  "test_acc_std": 0.00339,
+  "unstable_seed_spread": false
  }
 }
